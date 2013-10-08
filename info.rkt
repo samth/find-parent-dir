@@ -1,3 +1,3 @@
 #lang info
-(define collection "find-parent-dir")
+(define collection 'multi)
 (define deps '("base"))
