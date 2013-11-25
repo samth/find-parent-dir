@@ -20,3 +20,5 @@ Finds a parent directory of `start` that contains `sentinel`, or returns `#f`.
 ```
 
 Finds a parent directory of `start` that matches `pred` or returns `#f`.
+
+Originally by @offby1 here: https://gist.github.com/offby1/6862232
