@@ -28,7 +28,7 @@
      (parent-directory-stream-bottom-directory stream))
    (define (stream-rest stream)
      (let* ([d (parent-directory-stream-bottom-directory stream)]
-            [p (build-path d "..")])
+            [p (build-path d 'up)])
        (if (equal? (file-or-directory-identity d)
                    (file-or-directory-identity p))
            (list)
