@@ -37,7 +37,7 @@
 (define (find-parent-dir starting-dir criterion)
   (for/first ([d (parent-directory-stream starting-dir)]
               #:when (criterion d))
-    d))
+    (simplify-path d)))
 
 (define (find-parent-containing starting-dir sentinel)
   (find-parent-dir
